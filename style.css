@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #a8a89c;
+
+}
+
+canvas {
+  
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* detrás del contenido */
+    width: 100%;
+    height: 100vh;
+    background-color: #5a654d;
+  
+}
+
+/** ------- ESTILOS DE H ------**/
+h2 {
+  margin-top: 30;
+  color: #18221A;
+  font-family: "Rubik Dirt";
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+
+h3 {
+  margin-top: 2%;
+  padding: 0;
+  color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: "Century Gothic";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: left;
+  font-family: Poppins;
+
+}
+
+button {
+  color: #F2EAD4;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: end;
+  gap: 8px;
+  box-shadow: -3px 4px 5.3px 0px rgba(0, 0, 0, 0.25);
+  background-color: #C22100;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
+
+}
+/** ------- Main ------**/
+main {
+  min-height: 100vh;
+  padding: 0;
+  
+  
+}
+
+#banner {
+  padding-top: 10rem; 
+  margin: 0;
+
+
+}
+
+.fondosuperpuesto {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+  padding-bottom: 0;
+ height: fit-content;
+ 
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 10;
+  margin: 0;
+  max-height: fit-content;
+}
+
+/** ---- Nav ---- **/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0%;
+  padding-left: 3rem;
+   
+
+}
+.navbar a {
+  font-family: Poppins;
+  color: #6C765D;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px); /* opcional: desenfoque del fondo */
+
+}
+
+.navbar a:visited {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  padding-left:2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+  /* 30px */
+  padding-right: 10%;
+}
+
+li {
+  font-size: 18px;
+  color: #546140;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+li:hover {
+  background-color: #C22100; 
+  color: white; 
+}
+
+li a:hover {
+  color: white; 
+}
+
+.logo {
+  background-image: url("imagenes/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  justify-content: start;
+  display: block;
+  width: 200px;
+  height: 80px;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 125%;
+
+  padding-right: 10%;
+}
+
+li {
+  font-size: 18px;
+  color: #546140;
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+
+
+/** ------- SECCION ------**/
+section {
+  margin: 0;
+/**  min-height: 100vh;**/
+
+
+}
+
+
+/** ------- DESCRIPCION ------**/
+
+#descripcion {
+  margin-top: 0;
+  background-image: url(imagenes/blanco.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 7rem;
+  height: max-content;
+
+}
+
+
+.descripcion-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  }
+
+.descripcion-titulo h2 {
+  color: #000;
+  font-family: "Rubik Dirt";
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-left: 4rem
+}
+
+.descripcion-texto p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-right: 4rem;
+}
+
+
+
+/** ------- EQUIPOS ------**/
+
+#equipo {
+  background-image: url(imagenes/equipo.webp);
+  background-size: cover;
+  background-position: right;
+  padding: 4rem 4rem;
+  background-color: #fdf9f3;
+  text-align: center;
+  max-height: fit-content;
+}
+
+.equipo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.persona {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
+}
+
+.persona:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+.santi {
+  background-image: url('imagenes/santi-1.webp');
+}
+
+.maxi {
+  background-image: url('imagenes/maxi.webp');
+}
+
+.iara {
+  background-image: url('imagenes/iara.webp');
+}
+
+figcaption {
+  position: absolute;
+  opacity: 0;
+}
+
+
+/** ------- CONTACTO ------**/
+
+#contacto{
+  min-height: auto;
+  background-image: url(imagenes/fondo-blanco.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+#contacto h2 {
+  margin-left: 2rem;
+  padding-top: 2rem;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 15%;
+  padding: 20px;
+  color: #6C765D;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  gap: 16px;
+}
+
+form input,
+form textarea {
+  background: #EDE3CB;
+  box-shadow: 0px 0px 4px 1px rgba(67, 46, 65, 0.75) inset;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #6C765D;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+form button:hover {
+  background-color: #5a654d;
+}
+
+
+/** ------- FOOTER ------**/
+
+footer {
+  
+  display: flex;
+  align-items: flex-start;
+  background-color: #ABAC84;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+.imagen-decorativa {
+  width: 33.33%;
+  max-width: 600px;
+  min-width: 480px;
+  margin-right: 2rem;
+}
+
+.imagen-decorativa img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  min-height: 200px;
+  object-fit: contain;
+}
+
+.imagen-decorativa figcaption {
+  display: none;
+}
+
+/* Contenedor derecho (#contenedor y #cierrefooter) */
+.footer-right-section {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+/* #contenedor (lista) */
+#contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: left;
+  justify-content: start;
+  text-align: left;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+#datosfooter {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+#datosfooter li {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* #cierrefooter */
+#cierrefooter {
+  text-align: left;
+}
+
+#cierrefooter h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  color: #18221A;
+  margin: 0.5rem 0;
+}
+
+#cierrefooter h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  color: #C22100;
+  margin: 0.5rem 0;
+}
+
+.logo-forma{
+  max-width: 15rem;
+  
+}
+
+/* Media Query para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-decorativa {
+    width: 80%;
+    max-width: 400px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .footer-right-section {
+    width: 100%;
+    align-items: center;
+  }
+
+  #contenedor {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  #datosfooter {
+    justify-content: center;
+    margin-right: 0.5rem;
+  }
+
+  #cierrefooter {
+    width: 100%;
+    text-align: center;
+  }
+}

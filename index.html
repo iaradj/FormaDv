@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <!-- Seccion Navbar-->
+
+  <nav>
+    <h1 class="logo"> <a href="#banner"></a> FORMA</h1>
+    <ul class="navbar">
+      <li><a href="#descripcion">La Agencia</a></li>
+      <li><a href="#equipo">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Seccion Principal-->
+    <div class="fondosuperpuesto">
+      <div class="container">
+        <div id="banner">
+          <h2>¿Tu diseño da pena? <br> No juzgamos. <br> Pero lo arreglamos.</h2>
+          <h3>Resideñamos tu imagen para que nadie más <br> mire para otro lado.</h3>
+          <a href="#contacto">
+            <button>Salvá mi marca</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Seccion Descripcion-->
+
+  <section id="descripcion">
+    <div class="descripcion-container">
+      <div class="descripcion-titulo">
+        <h2>Diseño que transforma <br> tu marca.</h2>
+      </div>
+      <div class="descripcion-texto">
+        <p>Bienvenidos a <strong> FORMA… </strong> Diseño que evoluciona con vos.<br>
+          En <strong>FORMA, </strong>creemos que las marcas no solo se crean, sino que se moldean, se transforman y se perfeccionan.
+          Somos una agencia especializada en dar nueva vida a las identidades visuales de empresas que buscan
+          evolucionar y destacar. Ya sea renovando un diseño existente o creando una identidad desde cero, acompañamos a
+          cada marca en el proceso de convertirse en su mejor versión.<br><br>
+          Analizamos, repensamos y diseñamos con estrategia y creatividad para que cada detalle comunique lo que tu
+          empresa realmente es y lo que aspira ser. Porque en <strong> FORMA, </strong> entendemos que una identidad sólida no solo se ve…
+          se siente.<br> <strong> 
+          Rediseñá. Creá. Evolucioná.<br>
+          Con nosotros, dale Forma a tu marca</p> </strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion equipos-->
+  <section id="equipo">
+    <h2>Equipo</h2>
+    <div class="equipo-container">
+      <figure class="persona santi">
+        <figcaption>Santiago Canci</figcaption>
+      </figure>
+      <figure class="persona maxi">
+        <figcaption>Maximiliano Piergiacomi</figcaption>
+      </figure>
+      <figure class="persona iara">
+        <figcaption>Iara De Juanini</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Seccion contacto-->
+
+    <section id="contacto">
+      <h2>Contactenos</h2>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre">
+    
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo">
+    
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    
+  </section>
+
+
+  <!-- Seccion footer-->
+  <footer>
+    <figure class="imagen-decorativa">
+      <img src="./imagenes/figura-footer.jpg" alt="" class="img-decorativa">
+    </figure>
+  
+    <div class="footer-right-section">
+      <div id="contenedor">
+        <ul id="datosfooter">
+          <li>Diseño Multimedial</li>
+          <li>Diseño y Programación Web I</li>
+          <li>Turno Tarde - Comision DMT3AV</li>
+          <li>Profesor - Omar Toyo</li>
+          <li>Mayo - 2025</li>
+        </ul>
+      </div>
+  
+      <div id="cierrefooter">
+        <div class="textofooter">
+          <h4>Todo cambio empieza con una idea.</h4>
+          <h5>Nosotros te ayudamos a darle: </h5>
+          <figure>
+            <img src="./imagenes/logo.png" alt=" logo" class="logo-forma">
+            <figcaption>
+              Forma
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="sketch.js"> </script>
+  </body>
+  </html>
