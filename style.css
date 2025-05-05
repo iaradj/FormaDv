@@ -238,7 +238,9 @@ section {
   height: max-content;
 
 }
-
+.descripcion-titulo {
+  padding-top: 10rem; 
+}
 
 .descripcion-container {
   display: flex;
